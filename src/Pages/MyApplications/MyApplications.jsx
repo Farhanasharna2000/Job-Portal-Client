@@ -11,7 +11,7 @@ const MyApplications = () => {
         .then(data=>{
             setJobs(data)
         })
-    },[user?.email])
+    },[user.email])
     const handleDelete=(id)=>{
         fetch(`http://localhost:5000/job-application/${id}`,{
          method:"DELETE"
